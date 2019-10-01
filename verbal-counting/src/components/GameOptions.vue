@@ -31,12 +31,12 @@
         </div>
       </div>
     </fieldset>
-    <button class="form-submit" type="submit">Play!</button>
+    <button  class="form-submit" type="submit">Play!</button>
   </form>
 </template>
 
 <script>
-import { mapMutations, mapState, mapActions } from "vuex";
+import { mapMutations, mapState } from "vuex";
 export default {
   name: "GameOptions",
   computed: mapState({
@@ -56,7 +56,7 @@ export default {
       }
     }
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
@@ -174,11 +174,10 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 3px;
   background: #ffffff;
   cursor: pointer;
-  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+  margin-top: -14px; 
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; 
 }
 
-/* All the same stuff for Firefox */
 input[type=range]::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
@@ -189,7 +188,6 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
 }
 
-/* All the same stuff for IE */
 input[type=range]::-ms-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;

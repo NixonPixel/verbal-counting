@@ -31,6 +31,11 @@ export default new Vuex.Store({
     mainOptions: {
       duration: 1,
       difficulty: 1
+    },
+    previousResult: {
+      empty: false,
+      doneCount: 0,
+      accuracy: 0
     }
   },
   mutations: {
